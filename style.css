@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(271, 76%, 53%);
+}
+
+.password-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+input{
+    height: 3rem;
+    width: 30rem;
+    border-radius: 10px;
+    border: none;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.password-container input::placeholder{
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.password-container{
+    position: relative;
+}
+
+.fa-eye{
+    position: absolute;
+    display: flex;
+    right: 34rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    margin-top: 15px;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    display: flex;
+    right: 34rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    margin-top: 15px;
+}
+
+.fa-eye-slash:hover{
+    color: red;
+}
+
+.fa-eye:hover{
+    color: red;
+}
+
+@media (max-width: 768px){
+    .password-container input{
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .fa-eye-slash:hover{
+        color: red;
+    }
+    
+    .fa-eye:hover{
+        color: red;
+    }
+
+    .fa-eye, .fa-eye-slash{
+        right: 2rem;
+        margin-top: 1rem;
+        position: relative;
+    }
+}
